@@ -1,15 +1,25 @@
 @media screen and (max-width: 767px) {
+    .cards{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-    #menu{
+@media screen and (max-width: 767px) {
+
+    #menu {
         position: absolute;
         right: 2%;
         top: 23%;
         display: block;
     }
-    .home-container{
+
+    .home-container {
         width: 80%;
     }
-    #Heading{
+
+    #Heading {
         font-size: 5rem;
     }
-  }
+}

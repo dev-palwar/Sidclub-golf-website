@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav position={"fixed"}>
+      <nav>
         <Stack direction={'row'} marginLeft={'20px'}>
           <Image
             boxSize={100}

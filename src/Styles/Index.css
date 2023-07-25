@@ -3,22 +3,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: blueviolet; */
+    color: white;
 }
 
 h3 {
-    color: white;
     font-weight: 400;
     margin-right: 10px;
     cursor: pointer;
 }
-h3:hover{
+
+h3:hover {
     color: yellow;
 }
+
 nav {
+    background-color: black;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 video {
@@ -30,13 +34,17 @@ video {
     filter: brightness(40%);
 }
 
+.container {
+    background-color: black;
+    /* color: white; */
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
     gap: 13px;
     text-align: center;
     width: 50%;
@@ -52,7 +60,6 @@ video {
 #Heading::before {
     content: "EAT. DRINK. PLAY.";
     position: absolute;
-    color: #000;
     top: -5px;
     left: -5px;
     -webkit-text-stroke: 1.5px #95c11e;
@@ -60,14 +67,15 @@ video {
 }
 
 .about-container {
-    height: 100vh;
+    background-color: black;
+    /* max-width: 85%; */
+    margin: auto;
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 .scrolling-text {
-    color: black;
     white-space: nowrap;
     display: flex;
     animation: scrollAnimation 20s linear infinite;
@@ -82,7 +90,8 @@ video {
     transition: all 0.3s;
     cursor: none;
 }
-.scrolling-text span:hover{
+
+.scrolling-text span:hover {
     color: greenyellow;
 }
 
@@ -94,4 +103,34 @@ video {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.card-box {
+    background-color: black;
+    transition: all 0.3s;
+}
+
+.card-box:hover {
+    transform: scale(1.1);
+}
+
+.green-strip {
+    /* margin-top: 10px; */
+    background-color: rgb(158, 204, 32);
+    height: 30vh;
+    width: 100%;
+}
+
+.rest-image {
+    position: relative;
+}
+
+.rest-image::before {
+    content: '';
+    position: absolute;
+    height: 91%;
+    width: 30%;
+    background-image: url('https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg');
+    top: 18%; 
+    left: -25px;
 }
