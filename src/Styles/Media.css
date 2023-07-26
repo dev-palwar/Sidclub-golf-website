@@ -1,25 +1,41 @@
 @media screen and (max-width: 767px) {
-    .cards{
+    .cards {
         /* background-color: aqua; */
         display: flex;
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 767px) {
-
     #menu {
         position: absolute;
         right: 2%;
         top: 23%;
         display: block;
     }
-
+    
     .home-container {
-        width: 80%;
+        width: 85%;
     }
-
+    
     #Heading {
         font-size: 5rem;
     }
+    .testimonial {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 504px) {
+    nav{
+        border-bottom: 10%;
+    }
+    .testimonial{
+        font-size: 14px;
+    }
+    .footerCards::before{
+        top: -5%;
+    }
+    #call{
+    padding-bottom: 10%;
+    text-align: start;
+}
 }

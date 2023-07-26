@@ -7,9 +7,7 @@ import {
   Image,
   Text,
   Stack,
-  color,
 } from "@chakra-ui/react";
-import { transform } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 const About = () => {
@@ -100,7 +98,6 @@ const About = () => {
           justifyContent="center"
           gap="4%"
           className="cards"
-          marginBottom={'3%'}
         >
           <Cards
             cardWidth={cardWidth}
@@ -132,7 +129,6 @@ const Cards = ({ image, cardWidth }) => {
       <Box
         marginTop="4rem"
         position="relative"
-        borderRadius={15}
         height="40vh"
         bgSize="cover"
         width={cardWidth}
@@ -140,7 +136,7 @@ const Cards = ({ image, cardWidth }) => {
         className="card-box"
         sx={{
           "&::before": {
-            borderRadius: "5%",
+            borderRadius: "10px",
             content: `""`,
             position: "absolute",
             top: 0,
