@@ -4,20 +4,22 @@
         display: flex;
         flex-direction: column;
     }
+
     #menu {
         position: absolute;
         right: 2%;
         top: 23%;
         display: block;
     }
-    
+
     .home-container {
         width: 85%;
     }
-    
+
     #Heading {
         font-size: 5rem;
     }
+
     .testimonial {
         font-size: 22px;
     }
@@ -25,17 +27,26 @@
 
 
 @media screen and (max-width: 504px) {
-    nav{
-        border-bottom: 10%;
-    }
-    .testimonial{
+
+    .testimonial {
         font-size: 14px;
     }
-    .footerCards::before{
+
+    .footerCards::before {
         top: -5%;
     }
-    #call{
-    padding-bottom: 10%;
-    text-align: start;
-}
+
+    #call {
+        padding-bottom: 10%;
+        text-align: start;
+    }
+    #cursor{
+        display: none;
+    }
+    #blurredCursor{
+        display: none;
+    }
+    #logo{
+        margin-left: -10%;
+    }
 }

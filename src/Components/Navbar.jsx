@@ -26,20 +26,22 @@ const Navbar = () => {
     const blurredCursor = document.getElementById("blurredCursor");
     const cursorSize = 2; // The size of the cursor element
     const lagFactor = 50; // Adjust this value to control the lag amount
-  
+
     // Getting the coordinates of the real cursor
     const x = event.clientX;
     const y = event.clientY;
-  
+
     // Setting the position of the cursor element
     cursor.style.left = x - cursorSize / 2 + "px";
     cursor.style.top = y - cursorSize / 2 + "px";
-  
+
     // Apply the blur effect to the blurredCursor element with a slight lag
-    blurredCursor.style.left = x - cursorSize / 2 - lagFactor * cursorSize + "px";
-    blurredCursor.style.top = y - cursorSize / 2 - lagFactor * cursorSize + "px";
+    blurredCursor.style.left =
+      x - cursorSize / 2 - lagFactor * cursorSize + "px";
+    blurredCursor.style.top =
+      y - cursorSize / 2 - lagFactor * cursorSize + "px";
   };
-  
+
   useEffect(() => {
     document.addEventListener("scroll", handler);
   }, []);
@@ -66,6 +68,7 @@ const Navbar = () => {
           bgColor={`rgb(0,0,0, ${colorOpacity})`}
         >
           <Image
+            id="logo"
             boxSize={100}
             marginRight={20}
             src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg"
