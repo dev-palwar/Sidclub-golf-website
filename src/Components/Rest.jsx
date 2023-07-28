@@ -130,10 +130,7 @@ const Rest = () => {
           position={"relative"}
           textAlign={"center"}
         >
-          <Text
-            color={"white"}
-            fontWeight={"700"}
-          >
+          <Text color={"white"} id="testimonialText" fontWeight={"700"}>
             Excellent couple of hours, relax and enjoy in the fun. Staff were
             accommodating, friendly and very helpful. Café on site for
             refreshments etc. Will keep children enterntained during the

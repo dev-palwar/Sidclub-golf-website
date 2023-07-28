@@ -1,19 +1,19 @@
-import { Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Heading, Text } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 
 const Home = () => {
-  const src = "https://rr3---sn-nx5s7n7s.googlevideo.com/videoplayback?expire=1690318066&ei=kuC_ZJHlBuGLsfIP6OeVoA8&ip=212.102.46.205&id=o-AB3WKM1aQZifZ-uWwtJzuIRyGpMr-J92L1dLQWWaUEeE&itag=18&source=youtube&requiressl=yes&mh=Ta&mm=31%2C26&mn=sn-nx5s7n7s%2Csn-qxoedn7k&ms=au%2Conr&mv=m&mvi=3&pl=24&initcwndbps=1181250&spc=Ul2SqzA86UNXe1T7Q0Dws72kamdYmURyVMzMPChDSQ&vprv=1&svpuc=1&mime=video%2Fmp4&ns=-PLMLCbJ6rHn4E0Ohh2BsegO&gir=yes&clen=13781460&ratebypass=yes&dur=183.808&lmt=1687717422674316&mt=1690296110&fvip=2&fexp=24007246%2C24362686&beids=24350018&c=WEB&txp=4530434&n=MxtzvoLXw7iciA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIhAJgKwgKjdWItFcEtQDVY0K8ap29LLZsZ4z8SRFqz6uQoAiBwjXoyTkwUpbfhXr0gQVHDYNV6vxbsZHQc_gDVy85gAw%3D%3D&sig=AOq0QJ8wRgIhANZgkA7FkHpqz0Vbb6lblb87JOVOmNWXgTDycbMwYWcNAiEAq7vUOIcZDv-aIzg3MA8aCZf5I3CcnUMzRP6jGn0w5Y4%3D"
+  const src = "https://rr1---sn-vgqsrnlk.googlevideo.com/videoplayback?expire=1690469251&ei=Iy_CZK-aGoaM_9EPxZeCyA4&ip=139.190.117.171&id=o-AACAY94MmDRyI0-Q05MyEi7GYiwiTCz9h3wysfwgyC7A&itag=22&source=youtube&requiressl=yes&mh=dQ&mm=31%2C26&mn=sn-vgqsrnlk%2Csn-p5qlsnrr&ms=au%2Conr&mv=m&mvi=1&pl=20&spc=Ul2Sq-gQnCSfYTWvBKp5KB-h2QKP40QDNwHl5SE4-A&vprv=1&svpuc=1&mime=video%2Fmp4&ns=HLY-3q1u2Fg2ljTK-aaFkqYO&cnr=14&ratebypass=yes&dur=83.104&lmt=1640789242742517&mt=1690446821&fvip=3&fexp=24007246%2C24362686%2C24363391&c=WEB&txp=5311224&n=x7NKDQbk65yFjw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl&lsig=AG3C_xAwRAIgZZSYE-qMeJbaF9krzMUvviMaHvICeDy-KKYLvyY5trgCIEpOa1f4GRrTNyKVyLnCzrI2VwPeDcGkwEG1V3dd5hpy&sig=AOq0QJ8wRQIgS_kNvvArQcEht5ejEfBWj2mfAYpICBSCCbGSbinN5wYCIQCOr8yYA2aVVoYTXWwsQ-8_guJRUVh8RmpU8YhxwLdN4g%3D%3D&title=Thief%20-%20An%20Animated%20Short%20Film%20(2021)"
 
   return (
     <>
       <div className="container">
       <video
-        autoplay
-        loop
-        muted
-        src={src}
-      ></video>
-        <div className="home-container">
+      autoPlay
+      loop
+      muted
+      src="https://sidcupfamilygolf.com/wp-content/uploads/2023/02/hero.mp4"
+    ></video>
+        <Box className="home-container">
           <Heading fontSize={"4rem"} textAlign={"center"} id="Heading">
             EAT. DRINK. PLAY
           </Heading>
@@ -23,7 +23,7 @@ const Home = () => {
             Sidcup, South East London. Passionate about technology, player
             development and making golf fun and accessible to everyone.
           </Text>
-        </div>
+        </Box>
       </div>
     </>
   );

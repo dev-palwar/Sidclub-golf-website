@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    /* color: white; */
 }
 
 nav h3 {
@@ -19,7 +18,6 @@ nav h3:hover {
 }
 
 nav {
-    background-color: black;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -27,7 +25,7 @@ nav {
 }
 
 video {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     position: fixed;
@@ -36,7 +34,7 @@ video {
 }
 
 .container {
-    background-color: black;
+    /* background-color: black; */
     /* color: white; */
 }
 
@@ -61,6 +59,7 @@ video {
 
 #Heading::before {
     content: "EAT. DRINK. PLAY.";
+    color: black;
     position: absolute;
     top: -5px;
     left: -5px;
@@ -69,7 +68,7 @@ video {
 }
 
 .about-container {
-    background-color: black;
+    /* background-color: black; */
     padding: 50px;
     /* max-width: 85%; */
     margin: auto;
@@ -108,17 +107,7 @@ video {
     }
 }
 
-.card-box {
-    background-color: black;
-    transition: all 0.3s;
-}
-
-.card-box:hover {
-    transform: scale(1.1);
-}
-
 .rest-image {
-    /* border: 2px solid; */
     position: relative;
     margin-bottom: 18%;
     transition: all 0.3s
@@ -172,30 +161,34 @@ video {
     width: 44px;
 }
 
- #call {
+#call {
     text-align: center;
     color: white;
     font-size: 60px;
     padding-bottom: 2%;
 }
-.footerCard1:hover{
+
+.footerCard1:hover {
     cursor: pointer;
     background-image: url('https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C683&ssl=1');
     background-size: cover;
     color: white;
 }
-.footerCard2:hover{
+
+.footerCard2:hover {
     cursor: pointer;
     background-image: url('https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C683&ssl=1');
     background-size: cover;
     color: white;
 }
-.footerCard3:hover{
+
+.footerCard3:hover {
     cursor: pointer;
     background-image: url('https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1');
     background-size: cover;
     color: white;
 }
+
 footer {
     font-size: 17px;
     font-weight: 500;
